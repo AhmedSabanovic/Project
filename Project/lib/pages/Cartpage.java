@@ -74,11 +74,11 @@ public class Cartpage {
         String elementText = element.getText();
         return elementText.equals("90,00 KM");
     }
-    public void clicDecrease() {
+    public void clickDecrease() {
         WebElement De = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/article/div/div[3]/div[1]/form/table/tbody/tr[1]/td[5]/div/input[1]"));
         De.click();
     }
-    public void clicConfirm() {
+    public void clickConfirm() {
         WebElement Conf = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/article/div/div[3]/div[1]/form/table/tbody/tr[2]/td/input[1]"));
         Conf.click();
     }
@@ -88,9 +88,9 @@ public class Cartpage {
     }
     public void clickEdit2() {
         WebElement textBox = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/article/div/div[3]/div[1]/form/table/tbody/tr[1]/td[5]/div/input[2]"));
-textBox.click();  // click on the text box to give it focus
-textBox.clear();  // select all the text in the text box
-textBox.sendKeys("0");  // replace the selected text with the string "0"
+        textBox.click(); 
+        textBox.clear();  
+        textBox.sendKeys("0");  
 
     }
     

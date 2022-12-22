@@ -29,7 +29,7 @@ public class Productpage {
         WebElement List = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/div[1]/form/ul/li/ul/li[5]/a"));
         List.click();
     }
-    public void clicProduct2() {
+    public void clickProduct2() {
         WebElement Pro = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/div[3]/div/div[5]/div/div[1]/a/img"));
         Pro.click();
     }

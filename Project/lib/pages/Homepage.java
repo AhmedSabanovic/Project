@@ -62,7 +62,7 @@ public class Homepage {
         WebElement Coko = driver.findElement(By.xpath("/html/body/div[4]/header/div/div[3]/div/div/div/div[2]/div/ul/li[3]"));
         Coko.click();
     }
-    public void trgovinaClick() {
+    public void clickTrgovina() {
         WebElement Trgovina = driver.findElement(By.xpath("/html/body/div[4]/header/div/div[3]/div/div/nav/div/ul/li[2]/a"));
         Trgovina.click();
     }

@@ -16,7 +16,7 @@ public class testcart {
         Homepage homepage = new Homepage(driver);
 
       
-        homepage.trgovinaClick();
+        homepage.clickTrgovina();
         Thread.sleep(200);
 
         Productpage productpage = new Productpage(driver);

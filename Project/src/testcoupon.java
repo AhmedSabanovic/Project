@@ -15,7 +15,7 @@ public class testcoupon {
         Homepage homepage = new Homepage(driver);
 
       
-        homepage.trgovinaClick();
+        homepage.clickTrgovina();
         Thread.sleep(1000);
 
         Productpage productpage = new Productpage(driver);
@@ -23,7 +23,7 @@ public class testcoupon {
         productpage.clickPrice();
         Thread.sleep(200);
         productpage.clickList();
-        productpage.clicProduct2();
+        productpage.clickProduct2();
         productpage.clickAmmount();
         productpage.clickCart();
         Thread.sleep(200);

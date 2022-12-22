@@ -15,7 +15,7 @@ public class testcartdecrease {
         Homepage homepage = new Homepage(driver);
 
       
-        homepage.trgovinaClick();
+        homepage.clickTrgovina();
         Thread.sleep(1000);
 
         Productpage productpage = new Productpage(driver);
@@ -23,7 +23,7 @@ public class testcartdecrease {
         productpage.clickPrice();
         Thread.sleep(200);
         productpage.clickList();
-        productpage.clicProduct2();
+        productpage.clickProduct2();
         productpage.clickAmmount();
         productpage.typeAmmount("10000000000000000000");
         productpage.clickCart();
@@ -31,8 +31,8 @@ public class testcartdecrease {
         
         Cartpage cartpage = new Cartpage(driver);
 
-        cartpage.clicDecrease();
-        cartpage.clicConfirm();
+        cartpage.clickDecrease();
+        cartpage.clickConfirm();
         Thread.sleep(200);
 
         if (cartpage.isAmountDisplayed()) {
