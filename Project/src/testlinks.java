@@ -7,17 +7,16 @@ import pages.Homepage;
 
 public class testlinks {
     public static void main(String[] args) throws InterruptedException {
-        // Create a new WebDriver object
+      
         WebDriver driver = new EdgeDriver();
         driver.get("https://espresso.ba/");
         driver.manage().window().maximize();
 
-        // Create a new Homepage object
         Homepage homepage = new Homepage(driver);
 
         homepage.igButton();
         Thread.sleep(2000);
-        // Check the result of the register attempt
+       
         Set<String> windowHandles = driver.getWindowHandles();
         if (windowHandles.size() == 2) {
             System.out.println("Ig page is not opened as expected");
@@ -27,7 +26,7 @@ public class testlinks {
 
         homepage.fbButton();
         Thread.sleep(2000);
-        // Check the result of the register attempt
+        
         Set<String> windowHandle = driver.getWindowHandles();
         if (windowHandle.size() == 3) {
             System.out.println("Fb page is opened as expected");
@@ -44,7 +43,7 @@ public class testlinks {
             System.out.println("Unexpected result opening G page");
         }
 
-        // Close the browser
+        
         driver.quit();
     }
 }
