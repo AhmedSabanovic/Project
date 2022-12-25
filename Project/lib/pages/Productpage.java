@@ -33,11 +33,11 @@ public class Productpage {
         WebElement Pro = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/div[3]/div/div[5]/div/div[1]/a/img"));
         Pro.click();
     }
-    public void clickAmmount() {
+    public void clickAmount() {
         WebElement Ammount = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/div[2]/div[2]/form/div/input[2]"));
         Ammount.click();
     }
-    public void typeAmmount(String number) {
+    public void typeAmount(String number) {
         WebElement Ambox = driver.findElement(By.xpath("/html/body/div[4]/main/div[2]/div/section/div[2]/div[2]/form/div/input[2]"));
         Ambox.sendKeys(number);
     }

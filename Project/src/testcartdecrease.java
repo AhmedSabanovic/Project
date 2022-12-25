@@ -24,8 +24,8 @@ public class testcartdecrease {
         Thread.sleep(200);
         productpage.clickList();
         productpage.clickProduct2();
-        productpage.clickAmmount();
-        productpage.typeAmmount("10000000000000000000");
+        productpage.clickAmount();
+        productpage.typeAmount("10000000000000000000");
         productpage.clickCart();
         Thread.sleep(200);
         

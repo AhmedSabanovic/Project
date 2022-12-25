@@ -5,22 +5,21 @@ import pages.Homepage;
 import pages.Productpage;
 import pages.Cartpage;
 
-public class testcartzero {
+public class testcartamount {
     public static void main(String[] args) throws InterruptedException {
-        // create web driver instance
+       
         WebDriver driver = new EdgeDriver();
-        // navigate to website
         driver.get("https://espresso.ba/");
-        // maximize browser window
         driver.manage().window().maximize();
 
-        // create Homepage object and click the 'Trgovina' button
         Homepage homepage = new Homepage(driver);
+
+      
         homepage.clickTrgovina();
         Thread.sleep(1000);
 
-        // create Productpage object, sort products by price, and select a product
         Productpage productpage = new Productpage(driver);
+
         productpage.clickPrice();
         Thread.sleep(200);
         productpage.clickList();
@@ -28,19 +27,15 @@ public class testcartzero {
         productpage.clickAmount();
         productpage.typeAmount("10000000000000000000");
         productpage.clickCart();
-        Thread.sleep(200);
+        Thread.sleep(250);
         
-        // create Cartpage object, edit the cart, and check if the amount is displayed
-        Cartpage cartpage = new Cartpage(driver);
-        cartpage.clickEdit2();
-        cartpage.clickConfirm();
+        Cartpage cartpage = new Cartpage(driver); 
         if (cartpage.isAmountDisplayed()) {
-            System.out.println("Test successful");
+        System.out.println("Test successful");
         } else {
-            System.out.println("Test unsuccessful");
+        System.out.println("Test unsuccessful");
         }
-
-        // close the web driver
+        
         driver.quit();
     }
 }

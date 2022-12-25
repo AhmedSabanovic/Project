@@ -24,7 +24,7 @@ public class testcoupon {
         Thread.sleep(200);
         productpage.clickList();
         productpage.clickProduct2();
-        productpage.clickAmmount();
+        productpage.clickAmount();
         productpage.clickCart();
         Thread.sleep(200);
         
