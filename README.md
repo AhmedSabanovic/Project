@@ -5,7 +5,7 @@ In order to run this project, you will need the following:
 - Java version 1.8.0_311
 - The Visual Studio Code Extension Pack for Java
 - Selenium for Java, which can be downloaded from the Selenium website (https://www.selenium.dev/downloads/). After downloading, add all the .jar files to the Referenced Libraries of the project.
-- A Microsoft Edge driver for your version of Edge. This can also be downloaded from the Selenium website (https://www.selenium.dev/downloads/). After downloading, add the driver to your system's PATH environment variable.
+- A Microsoft Edge driver for your version of Edge. This can be downloaded from the following website (https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/). After downloading, add the driver to your system's PATH environment variable.
 
 ## Setting up the project
 
